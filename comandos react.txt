@@ -1,0 +1,40 @@
+crear app
+npx create-react-app my-app
+*************************************
+
+ejecutar app
+npm start
+
+*****************************************
+crear proyecto de react native
+
+con js
+npx react-native init AwesomeProject
+
+con ts
+npx react-native init AwesomeTSProject --template react-native-template-typescript
+************************************************
+Iniciar aplicacion
+
+npx react-native start
+*********************************
+ejecutar apliacion en el dispositivo emulador
+npx react-native run-android
+***********************************
+ejecutar aplicacion en dispositivo fisico
+
+****
+ver dispositivos conectados
+adb divices
+
+
+
+
+
+
+
+
+
+
+
+
