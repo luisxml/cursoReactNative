@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { color } from "react-native-reanimated";
+// import { color } from "react-native-reanimated";
 
 export const styles = StyleSheet.create({
     globalMargin: {
@@ -42,5 +42,8 @@ export const styles = StyleSheet.create({
     menuBtn: {
         marginVertical: 5,
     }
-    
 });
+
+export const colors = {
+    primary: '#5856D6'
+}
