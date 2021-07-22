@@ -1,5 +1,8 @@
 import React, { useContext, useEffect } from 'react'
-import { ActivityIndicator, Dimensions, FlatList, ScrollView, Text, View } from 'react-native';
+import { ActivityIndicator, Dimensions, ScrollView, View } from 'react-native';
+
+import SplashScreen from 'react-native-splash-screen'
+
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { MoviePoster } from '../components/MoviePoster';
 import { useMovies } from '../hooks/useMovies';
@@ -22,8 +25,11 @@ export const HomeScreen = () => {
         const uri = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
         const [primary, secondary] = await getImageColors(uri);
         setMainColors({primary, secondary});
-        console.log(primary, secondary);
     }
+
+    useEffect(() => {
+        SplashScreen.hide();
+    }, [])
     
     useEffect(() => {
         if (nowPlaying.length > 0) {
